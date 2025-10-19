@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehal Ansh Srivastava | Hydrosystems Engineering Researcher</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Slate 50 */
+        }
+        .container-section {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+        /* Style for active tab link */
+        .tab-link.active {
+            border-bottom: 3px solid #f9fafb; /* White border for high contrast on dark header */
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header, Navigation, and Contact Info -->
+    <!-- PRIMARY COLOR CHANGE: bg-indigo-700 -> bg-[#212a31] -->
+    <header class="bg-[#212a31] text-white shadow-lg sticky top-0 z-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Top Bar with Name and Contact -->
+            <!-- BORDER COLOR CHANGE: border-indigo-600 -> border-gray-600 -->
+            <div class="py-4 flex flex-col md:flex-row justify-between items-center border-b border-gray-600">
+                <div class="text-center md:text-left mb-2 md:mb-0">
+                    <h1 class="text-2xl font-extrabold tracking-tight">
+                        Nehal Ansh Srivastava
+                    </h1>
+                </div>
+                <!-- Contact/Social Links -->
+                <div class="space-x-4 flex text-sm">
+                    <a href="mailto:nsrivas7@asu.edu" class="hover:underline opacity-90 hover:opacity-100">Email</a>
+                    <a href="https://www.linkedin.com/in/nehal-ansh-srivastava" target="_blank" class="hover:underline opacity-90 hover:opacity-100">LinkedIn</a>
+                    <span class="opacity-90 hidden sm:inline">+1 (480) 252-8381</span>
+                </div>
+            </div>
+
+            <!-- Navigation Tabs -->
+            <nav class="flex space-x-4 sm:space-x-8 text-lg font-light">
+                <a href="#home" class="tab-link py-3 px-1 transition duration-150 active" data-tab="tab-home" onclick="showTab(event, 'tab-home')">Home/About</a>
+                <a href="#research" class="tab-link py-3 px-1 transition duration-150" data-tab="tab-research" onclick="showTab(event, 'tab-research')">Research/Experience</a>
+                <a href="#academia" class="tab-link py-3 px-1 transition duration-150" data-tab="tab-academia" onclick="showTab(event, 'tab-academia')">Academia</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Tab 1: Home/About Content -->
+        <div id="tab-home" class="tab-content">
+            <!-- HEADING COLOR CHANGE: text-indigo-700 -> text-[#212a31] -->
+            <h2 class="text-3xl font-bold pt-12 pb-2 text-[#212a31]">Profile Overview</h2>
+
+            <!-- About Section -->
+            <section id="about" class="container-section border-b border-gray-200">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">About Me</h3>
+                
+                <!-- NEW: Container for Image and Text -->
+                <div class="flex flex-col md:flex-row md:space-x-6">
+                    <!-- Image Column -->
+                    <div class="md:w-1/4 mb-6 md:mb-0 flex justify-center">
+                        <img 
+                            src="uploaded:Nehal_RB1.jpg-f387d18d-7cab-4016-9e88-8940cdb06a84" 
+                            alt="Nehal Ansh Srivastava Professional Headshot"
+                            class="w-40 h-40 object-cover rounded-full shadow-lg border-4 border-white ring-4 ring-gray-300"
+                            onerror="this.onerror=null; this.src='https://placehold.co/160x160/cccccc/333333?text=Profile+Pic';"
+                        >
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="md:w-3/4 text-lg leading-relaxed space-y-4">
+                        <p>
+                            I am a highly driven Ph.D. Student and Graduate Research Associate at Arizona State University specializing in **Hydrosystems Engineering** with a focus on urban infrastructure resilience. My work involves developing coupled stormwater-power modeling frameworks (SWMM, PyPSA) and advanced statistical techniques to simulate and mitigate cascading infrastructure failures during extreme hydrometeorological events. I am proficient in **Python, MATLAB, and R**, with a commitment to developing Safe-to-Fail (STF) and Fail-Safe (FS) interventions for critical systems.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="container-section border-b border-gray-200">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Skills & Technologies</h3>
+                
+                <div class="flex flex-wrap gap-3">
+                    <!-- SKILL TAG COLOR CHANGE: bg-indigo-100 text-indigo-800 -> bg-gray-200 text-[#212a31] -->
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Python</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">SWMM</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">PyPSA</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">MATLAB, R</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Cascading Failure Modeling</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Hydrologic-Hydraulic Modeling</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Statistical Modeling (L-moments, Kriging)</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Machine Learning Algorithms</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Radar QPE Processing</span>
+                    <span class="bg-gray-200 text-[#212a31] text-sm font-medium px-4 py-2 rounded-full shadow-inner">Resilience (Fail-Safe & Safe-to-Fail)</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Tab 2: Research/Experience Content (Hidden by default) -->
+        <div id="tab-research" class="tab-content hidden">
+            <!-- HEADING COLOR CHANGE: text-indigo-700 -> text-[#212a31] -->
+            <h2 class="text-3xl font-bold pt-12 pb-2 text-[#212a31]">Research & Professional Experience</h2>
+
+            <!-- Experience Section -->
+            <section id="experience" class="container-section border-b border-gray-200">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Professional Experience</h3>
+
+                <!-- Experience Item 1: Graduate Research Associate -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-gray-900">Graduate Research Associate</h4>
+                        <span class="text-sm text-gray-500 font-medium">August 2020 - Present</span>
+                    </div>
+                    <!-- COMPANY TEXT COLOR CHANGE: text-indigo-600 -> text-[#212a31] -->
+                    <p class="text-[#212a31] font-medium mb-3">SSEBE, Arizona State University | Tempe, USA</p>
+                    <ul class="list-disc ml-6 text-gray-700 space-y-2">
+                        <li>Built a coupled stormwater-power modeling framework by integrating **SWMM and PyPSA** via a Python library to simulate cascading infrastructure failures during storm events.</li>
+                        <li>Improved frequency analysis of extreme precipitation through statistical modeling of radar QPE; designed a hierarchical framework to leverage radar QPE for **IDF curve development**.</li>
+                        <li>Evaluated resilience strategies by testing Fail-Safe (FS) and Safe-to-Fail (STF) interventions within the cascading failure framework.</li>
+                        <li>Advanced wind characterization by developing a methodology to interpolate and downscale storm wind speeds and gusts in urban environments.</li>
+                        <li>Modeled the Phoenix stormwater network as an operational SWMM model using drainage datasets from the City of Phoenix Public Works Department.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="container-section border-b border-gray-200">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Additional Research & Projects</h3>
+
+                <!-- Project Item 1: Uncertainty Analysis -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Uncertainty Analysis of Performance of Stormwater Infrastructure</h4>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Analyzed stormwater infrastructure behavior using an SWMM model in response to projected deep uncertainties, conducting robustness and flexibility analysis via a scenario development approach.
+                    </p>
+                </div>
+
+                <!-- Project Item 2: Floodplain Accuracy -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Analysis of Floodplain Accuracy using Remotely Sensed Data</h4>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Utilized areal imagery from Planet for classification of flooded area using supervised and unsupervised classification algorithms, comparing performance against the FEMA floodplain dataset.
+                    </p>
+                </div>
+                
+                <!-- Project Item 3: Impact of Urbanization -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">Analysis of Impact of Urbanization on Runoff Generation</h4>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Analyzed changes in runoff quantity in a residential area developed over 20 years by developing a **KINEROS hydrologic model**.
+                    </p>
+                </div>
+                
+                <!-- Project Item 4: MATLAB Software -->
+                <div class="mb-8 p-6 bg-white rounded-xl shadow-md transition duration-300 hover:shadow-lg">
+                    <h4 class="text-xl font-semibold text-gray-900 mb-2">MATLAB Software Development to Analyze Aquifer Characteristics</h4>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Developed a generalized MATLAB-based software to derive aquifer characteristics through numerical solutions of theoretical equations using data from pumping tests.
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Tab 3: Academia Content (Hidden by default) -->
+        <div id="tab-academia" class="tab-content hidden">
+            <!-- HEADING COLOR CHANGE: text-indigo-700 -> text-[#212a31] -->
+            <h2 class="text-3xl font-bold pt-12 pb-2 text-[#212a31]">Academic History</h2>
+
+            <!-- Education Section -->
+            <section id="education" class="container-section border-b border-gray-200">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Education</h3>
+
+                <!-- Education Item 1: PhD -->
+                <div class="mb-6 p-6 bg-white rounded-xl shadow-md">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-gray-900">Ph.D. Civil, Environmental and Sustainable Engineering</h4>
+                        <span class="text-sm text-gray-500 font-medium">August 2022 - Present</span>
+                    </div>
+                    <!-- SCHOOL TEXT COLOR CHANGE: text-indigo-600 -> text-[#212a31] -->
+                    <p class="text-[#212a31] font-medium mb-1">Arizona State University (ASU)</p>
+                    <p class="text-sm text-gray-600">Speciality: Hydrosystems Engineering | GPA: 4.0/4.0</p>
+                </div>
+                
+                <!-- Education Item 2: MS -->
+                <div class="mb-6 p-6 bg-white rounded-xl shadow-md">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-gray-900">M.S. Civil, Environmental and Sustainable Engineering</h4>
+                        <span class="text-sm text-gray-500 font-medium">August 2020 - July 2022</span>
+                    </div>
+                    <!-- SCHOOL TEXT COLOR CHANGE: text-indigo-600 -> text-[#212a31] -->
+                    <p class="text-[#212a31] font-medium mb-1">Arizona State University (ASU)</p>
+                    <p class="text-sm text-gray-600">Speciality: Hydrosystems Engineering | GPA: 4.0/4.0</p>
+                </div>
+
+                <!-- Education Item 3: B.Tech -->
+                <div class="p-6 bg-white rounded-xl shadow-md">
+                    <div class="flex justify-between items-start mb-2">
+                        <h4 class="text-xl font-semibold text-gray-900">B.Tech. Civil Engineering</h4>
+                        <span class="text-sm text-gray-500 font-medium">July 2016 - June 2020</span>
+                    </div>
+                    <!-- SCHOOL TEXT COLOR CHANGE: text-indigo-600 -> text-[#212a31] -->
+                    <p class="text-[#212a31] font-medium mb-1">Manipal Institute of Technology</p>
+                    <p class="text-sm text-gray-600">GPA: 3.7/4.0</p>
+                </div>
+            </section>
+            
+            <!-- Publications and Awards -->
+            <section id="honors" class="container-section">
+                <h3 class="text-2xl font-bold mb-6 text-gray-800">Publications & Honors</h3>
+
+                <!-- Publications -->
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Select Publications</h4>
+                <ul class="list-disc ml-6 text-gray-700 space-y-3 mb-8 text-base">
+                    <li>**Improving the utility of weather radar for the spatial frequency analysis of extreme precipitation**, *Journal of Hydrology*, Volume 624, 2023.</li>
+                    <li>**Changing boundaries, distributed control, and implications for transportation sustainability**, *npj. Sustain. Mobil. Transp.* 1, 12 (2024).</li>
+                    <li>**A Coupled Stormwater-Power Model for the Simulation of Cascading Infrastructure Failures: An Application in Phoenix, AZ**, *Submitted to Environmental Modeling and Software*.</li>
+                </ul>
+
+                <!-- Honors and Awards -->
+                <h4 class="text-xl font-semibold text-gray-800 mb-4">Key Honors and Awards</h4>
+                <ul class="list-disc ml-6 text-gray-700 space-y-3 text-base">
+                    <li>University Graduate Fellowship (Jan 2024, Jan 2025)</li>
+                    <li>Academic Scholarship 2024-2025 awarded by the Arizona Hydrological Society.</li>
+                    <li>Outstanding Poster Presentation in the ASU Flow Event (Nov 2023).</li>
+                    <li>Engineering Graduate Fellowship (June 2021).</li>
+                </ul>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <!-- FOOTER COLOR REMAINS DARK GRAY: bg-gray-800 -->
+    <footer class="bg-gray-800 text-white mt-12">
+        <div class="max-w-4xl mx-auto p-6 text-center text-sm opacity-80">
+            &copy; 2025 Nehal Ansh Srivastava. Hosted with GitHub Pages.
+        </div>
+    </footer>
+    
+    <!-- JavaScript for Tab Functionality -->
+    <script>
+        /**
+         * Function to handle tab switching
+         * Hides all content divs and shows the one corresponding to the clicked tab link.
+         * @param {Event} event - The click event
+         * @param {string} tabId - The ID of the content div to show (e.g., 'tab-home')
+         */
+        function showTab(event, tabId) {
+            event.preventDefault();
+
+            // 1. Hide all tab content divs
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+            });
+
+            // 2. Remove 'active' class from all tab links
+            document.querySelectorAll('.tab-link').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // 3. Show the selected content div
+            const selectedTab = document.getElementById(tabId);
+            if (selectedTab) {
+                selectedTab.classList.remove('hidden');
+                
+                // Scroll to the top of the content area for a clean tab switch feel
+                const mainContent = document.querySelector('main');
+                if (mainContent) {
+                    mainContent.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+            
+            // 4. Add 'active' class to the clicked tab link
+            event.currentTarget.classList.add('active');
+        }
+
+        // Set the active tab on initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Find the current active tab link and simulate a click to apply styling/visibility
+            const activeLink = document.querySelector('.tab-link.active');
+            if (activeLink) {
+                const tabId = activeLink.getAttribute('data-tab');
+                document.getElementById(tabId)?.classList.remove('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
