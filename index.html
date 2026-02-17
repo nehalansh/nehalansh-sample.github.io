@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <nav class="flex space-x-8 text-base uppercase tracking-widest font-semibold overflow-x-auto">
+            <nav class="flex space-x-8 text-lg uppercase tracking-widest font-semibold overflow-x-auto">
                 <button onclick="showTab('tab-home', this)" class="tab-link py-4 active">About</button>
                 <button onclick="showTab('tab-research', this)" class="tab-link py-4">Research</button>
                 <button onclick="showTab('tab-presentations', this)" class="tab-link py-4">Presentations</button>
@@ -148,53 +148,63 @@
             <h3 class="text-xs uppercase tracking-[0.3em] font-black text-gray-400 mb-6">Selected Publications</h3>
             <div class="grid gap-6">
 
-                <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
-                    <div class="flex justify-between items-start">
-                        <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Under Review</span
+                <div class="grid gap-6 mb-12">
+                    <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Under Review</span
+                        </div>
+                        <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">A Safe Operating Space for Cities: Navigating Tensions Between Emissions Mitigation, Climate Adaptation, and Well-Being In Urban Transformation</h4>
+                        <p class="text-base text-gray-500 mb-4">J. Robert Wolfinbarger, Irfan Batur, Mattheus Porto, <span class="font-bold"><u>Nehal Ansh Srivastava</u></span>, Eleanor M. Hennessy, Sneha Roy, Mindy Kimball, Ryan M. Sparks, Sam Fletcher, and Mikhail V. Chester</p>
+                        <p class="text-gray-600 text-lg leading-relaxed">Proposes a semi-theoretical framework for cities to navigate the tensions between mitigation, adaptation and well being as they manage multiple climate change impacts.</p>
                     </div>
-                    <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">A Safe Operating Space for Cities: Navigating Tensions Between Emissions Mitigation, Climate Adaptation, and Well-Being In Urban Transformation</h4>
-                    <p class="text-base text-gray-500 mb-4">J. Robert Wolfinbarger, Irfan Batur, Mattheus Porto, <span class="font-bold"><u>Nehal Ansh Srivastava</u></span>, Eleanor M. Hennessy, Sneha Roy, Mindy Kimball, Ryan M. Sparks, Sam Fletcher, and Mikhail V. Chester</p>
-                    <p class="text-gray-600 text-lg leading-relaxed">Proposes a semi-theoretical framework for cities to navigate the tensions between mitigation, adaptation and well being as they manage multiple climate change impacts.</p>
                 </div>
 
-                <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
-                    <div class="flex justify-between items-start">
-                        <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Under Review</span>
-                        <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
+                <div class="grid gap-6 mb-12">
+                    <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Under Review</span>
+                            <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
+                        </div>
+                        <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">A coupled stormwater-power model for the simulation of cascading infrastructure failures: An application in Phoenix, AZ</h4>
+                        <p class="text-base text-gray-500 mb-4"><span class="font-bold"><u>Nehal Ansh Srivastava</u></span>, Ryan Sparks, Mikhail Chester, Mattheus Porto, Nathan Johnson, and Giuseppe Mascaro</p>
+                        <p class="text-gray-600 text-lg leading-relaxed">Developed and applied the first integrated SWMM-PyPSA modeling platform to simulate how wind-induced damage to power infrastructure components propagates and causes cascading failures in urban infrastructure.</p>
                     </div>
-                    <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">A coupled stormwater-power model for the simulation of cascading infrastructure failures: An application in Phoenix, AZ</h4>
-                    <p class="text-base text-gray-500 mb-4"><span class="font-bold"><u>Nehal Ansh Srivastava</u></span>, Ryan Sparks, Mikhail Chester, Mattheus Porto, Nathan Johnson, and Giuseppe Mascaro</p>
-                    <p class="text-gray-600 text-lg leading-relaxed">Developed and applied the first integrated SWMM-PyPSA modeling platform to simulate how wind-induced damage to power infrastructure components propagates and causes cascading failures in urban infrastructure.</p>
-                </div>
-                
-                <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
-                    <div class="flex justify-between items-start">
-                        <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Published 2025</span>
-                        <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
-                    </div>
-                    <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">Expanding infrastructure resilience horizons: Safe-to-Fail and Social-Ecological-Technological dynamics</h4>
-                    <p class="text-base text-gray-500 mb-4">Mattheus Porto, Mikhail Chester, Yeowon Kim, Giuseppe Mascaro, and <span class="font-bold"><u>Nehal Ansh Srivastava</u></span> | <span class="italic">Sustainability Science</span></p>
-                    <p class="text-gray-600 text-lg leading-relaxed">Integrates Safe-to-Fail design theory with the SETS framework to create a practical failure-management approach that diversifies infrastructure adaptation.</p>
-                </div>
-                
-                <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
-                    <div class="flex justify-between items-start">
-                        <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Published 2024</span>
-                        <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
-                    </div>
-                    <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">Changing boundaries, distributed control, and implications for transportation sustainability</h4>
-                    <p class="text-base text-gray-500 mb-4">Eleanor M. Hennessy, J. Robert Wolfinbarger, Irfan Batur, <span class="font-bold"><u>Nehal Ansh Srivastava</u></span>, Mattheus Porto, Gabriel I. Cotlier, Madison Horgan, Ian Searles, Ryan M. Sparks and Mikhail V. Chester | <span class="italic">npj Sustainable Mobility and Transport</span></p>
-                    <p class="text-gray-600 text-lg leading-relaxed">Explored how decentralized control strategies in complex urban systems, like transportation networks, affect overall system sustainability and operational efficiency under changing conditions.</p>
                 </div>
 
-                <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
-                    <div class="flex justify-between items-start">
-                        <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Published 2024</span>
-                        <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
+                <div class="grid gap-6 mb-12">
+                    <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Published 2025</span>
+                            <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
+                        </div>
+                        <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">Expanding infrastructure resilience horizons: Safe-to-Fail and Social-Ecological-Technological dynamics</h4>
+                        <p class="text-base text-gray-500 mb-4">Mattheus Porto, Mikhail Chester, Yeowon Kim, Giuseppe Mascaro, and <span class="font-bold"><u>Nehal Ansh Srivastava</u></span> | <span class="italic">Sustainability Science</span></p>
+                        <p class="text-gray-600 text-lg leading-relaxed">Integrates Safe-to-Fail design theory with the SETS framework to create a practical failure-management approach that diversifies infrastructure adaptation.</p>
                     </div>
-                    <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">Improving the utility of weather radar for the spatial frequency analysis of extreme precipitation</h4>
-                    <p class="text-base text-gray-500 mb-4"><span class="font-bold"><u>Nehal Ansh Srivastava</u></span> and Giuseppe Mascaro | <span class="italic">Journal of Hydrology</span></p>
-                    <p class="text-gray-600 text-lg leading-relaxed">Developed a robust statistical framework to use high-resolution radar data (QPE) for improving the accuracy of Intensity-Duration-Frequency (IDF) curves, which are essential for resilient urban stormwater planning.</p>
+                </div>
+
+                <div class="grid gap-6 mb-12">
+                    <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Published 2024</span>
+                            <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
+                        </div>
+                        <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">Changing boundaries, distributed control, and implications for transportation sustainability</h4>
+                        <p class="text-base text-gray-500 mb-4">Eleanor M. Hennessy, J. Robert Wolfinbarger, Irfan Batur, <span class="font-bold"><u>Nehal Ansh Srivastava</u></span>, Mattheus Porto, Gabriel I. Cotlier, Madison Horgan, Ian Searles, Ryan M. Sparks and Mikhail V. Chester | <span class="italic">npj Sustainable Mobility and Transport</span></p>
+                        <p class="text-gray-600 text-lg leading-relaxed">Explored how decentralized control strategies in complex urban systems, like transportation networks, affect overall system sustainability and operational efficiency under changing conditions.</p>
+                    </div>
+                </div>
+
+                <div class="grid gap-6 mb-12">
+                    <div class="research-card group p-8 bg-white border border-gray-200 rounded-2xl hover:border-amber-400 transition-all duration-300 shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <span class="text-[12px] font-black bg-green-100 text-green-700 px-2 py-1 rounded uppercase tracking-widest">Published 2024</span>
+                            <a href="https://doi.org/10.1007/s11625-025-01779-4" target="_blank" class="text-amber-600 hover:text-amber-800 font-bold text-xs uppercase tracking-tighter">View DOI &rarr;</a>
+                        </div>
+                        <h4 class="text-2xl font-bold mt-4 mb-2 group-hover:text-amber-900 transition">Improving the utility of weather radar for the spatial frequency analysis of extreme precipitation</h4>
+                        <p class="text-base text-gray-500 mb-4"><span class="font-bold"><u>Nehal Ansh Srivastava</u></span> and Giuseppe Mascaro | <span class="italic">Journal of Hydrology</span></p>
+                        <p class="text-gray-600 text-lg leading-relaxed">Developed a robust statistical framework to use high-resolution radar data (QPE) for improving the accuracy of Intensity-Duration-Frequency (IDF) curves, which are essential for resilient urban stormwater planning.</p>
+                    </div>
                 </div>
             </div>
         </div>
